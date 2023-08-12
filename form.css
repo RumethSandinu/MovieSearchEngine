@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    
+}
+:root{
+    --main-color: #b60000 ;
+    --text-color: #000000; 
+    --bg-color:#fff ;
+}
+.darktheme{
+    --bg-color: #000000;
+    --text-color: #fff;
+    --main-color: #b60000;
+}
+body {
+  font-family: Arial, sans-serif;
+  
+}
+.hero{
+  height: 16vh;
+  
+  
+}
+nav ul li a{
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 17px;
+}
+
+section{
+  padding-top:10px ;
+  padding-bottom: 10px;
+  background:radial-gradient(var(--main-color),var(--bg-color));
+}
+
+.formcontainer {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color:var(--bg-color);
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+ 
+
+}
+.heading{
+  text-align: center;
+  padding-bottom: 5px;
+  color: var(--text-color);
+}
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.column {
+  flex: 1;
+  padding: 10px;
+}
+h2{
+  color: var(--text-color);
+}
+label{
+  color: var(--text-color);
+}
+
+label, input {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button[type="submit"] {
+  background-color: var(--main-color);
+  color:var(--bg-color);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color:hsl(0, 68%, 61%);
+}
+/* Popup */
+.modal {
+  display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 9999;
+}
+
+/* Popup Content */
+.popup-content {
+  background-color: #fefefe;
+  margin: 15% auto; 
+  padding: 20px;
+  border: 1px solid #888;
+  width: 400px; 
+  
+}
+#confirmation {
+  text-align: center;
+  color: var(--main-color);
+  font-size: 30px;
+  position: absolute;
+  left: 50%; 
+  transform: translate(-50%, -50%);
+}
+
+#orderconfirm {
+  text-align: center;
+  position: flex;
+  color: var(--main-color);
+  padding-top: 5px;
+  left: 50%;
+}
+
+
+/* Close Button */
+.close {
+  border: none;
+  border-radius: 4px;
+  background: var(--main-color);
+  color:var(--text-color);
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  display: block; 
+  margin: 0 auto;
+  width: 100px; 
+  text-align: center;
+}
+
+.close:hover {
+  color: rgb(240, 87, 87);
+  text-decoration: none;
+  cursor: pointer;
+}
+/* Responsive style */
+@media screen and (max-width: 1200px) {
+  
+  .hero {
+    height: 14vh;
+  }
+
+  
+  nav ul li a {
+    font-size: 14px;
+  }
+  section{
+    padding-top: 30px;
+    padding-bottom: 10px;
+  }
+
+  
+  .formcontainer {
+    
+    max-width: 700px;
+  }
+
+
+  .formcontainer, .formcontainer .row, .column {
+    padding: 10px;
+  }
+
+  
+  button[type="submit"] {
+    padding: 8px 16px;
+  }
+
+ 
+  .popup-content {
+    width: 300px;
+  }
+
+ 
+  #confirmation, #orderconfirm {
+    font-size: 24px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 1024px) {
+  body {
+    font-size: 14px; 
+  }
+
+  .hero {
+    height: 10vh;
+  }
+  section{
+    padding-top: 50px;
+    padding-bottom: 10px;
+  }
+
+  .formcontainer {
+    max-width: 600px; 
+  }
+
+  .column {
+    flex: 1;
+    padding: 5px; 
+  }
+
+  
+}
+
+
+@media (max-width: 768px) {
+  body {
+    font-size: 12px;
+  }
+  section{
+    padding-top: 40px;
+    padding-bottom: 10px;
+  }
+
+  .formcontainer {
+    max-width: 400px; 
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+  
+  .hero {
+    height: 8vh;
+  }
+  
+  
+  nav ul li a {
+    font-size: 14px;
+  }
+  section{
+    padding-top: 50px;
+    padding-bottom: 10px;
+  }
+  
+ 
+  .formcontainer {
+    max-width: 100%;
+    padding: 10px;
+  }
+  
+  .column {
+    flex: 1 1 100%; 
+  }
+  
+  label,
+  input,
+  select,
+  button[type="submit"] {
+    width: 100%;
+  }
+  
+  
+  .popup-content {
+    width: 100%;
+    margin: 10% auto;
+  }
+  
+  #confirmation {
+    font-size: 24px;
+  }
+  
+  #orderconfirm {
+    font-size: 18px;
+  }
+  
+  .close {
+    width: 80px;
+  }
+}
+
+
+
+
+

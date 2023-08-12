@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>galleryPage</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+        <link rel="stylesheet" href="Index.css">
+        <link rel="stylesheet" href="gallery.css">
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <!-- Display favicon -->
+        <link rel="icon" type="image/x-icon" href="Logo/LogoFavicon.ico">
+    </head>
+
+    <body>
+        <header>
+            <div class="hero">
+                <!--Navigation bar-->
+                <nav>
+                    <a href="Index.html"><img class="logo" src="logo/logo2.png" alt="logo"></a>
+                    <ul>
+                        <li><a href="Index.html"><i class="uil uil-home"></i>&nbsp;Home</a></li>
+                        <li><a href="gallery.html"><i class="uil uil-clapper-board"></i>&nbsp;Gallery</a></li>
+                        <li><a href="FavouritesPage.html"><i class="uil uil-favorite"></i>&nbsp;Favourites</a></li>
+                        <li><a href="about.html"><i class="uil uil-user-circle"></i>&nbsp;About Us</a></li>
+                        <li><a href="shop.html"><i class="uil uil-shopping-bag"></i>&nbsp;Shop</a></li>
+                        <li><a href="quiz.html"><i class="uil uil-folder-question"></i>&nbsp;Quiz</a></li>
+                        <li><a href="commentSourceCode.html"><i class="uil uil-comment-alt-lines"></i>&nbsp;Feedbacks</a></li>
+                    </ul>
+
+                    <div class="btn">
+                        <div class="button-container">
+                            <a href="loginPage.html" class="action_btn">Sign up</a>
+                            <div class="toggle_btn">
+                                &nbsp;&nbsp;<i class="uil-solid uil-bars"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dropdown_menu">
+                        <li><a href="Index.html"><i class="uil uil-home"></i>&nbsp;Home</a></li>
+                        <li><a href="gallery.html"><i class="uil uil-clapper-board"></i>&nbsp;Gallery</a></li>
+                        <li><a href="FavouritesPage.html"><i class="uil uil-favorite"></i>&nbsp;Favourites</a></li>
+                        <li><a href="about.html"><i class="uil uil-user-circle"></i>&nbsp;About Us</a></li>
+                        <li><a href="shop.html"><i class="uil uil-shopping-bag"></i>&nbsp;Shop</a></li>
+                        <li><a href="quiz.html"><i class="uil uil-folder-question"></i>&nbsp;Quiz</a></li>
+                        <li><a href="commentSourceCode.html"><i class="uil uil-comment-alt-lines"></i>&nbsp;Feedbacks</a></li>
+                        <li><a href="loginPage.html" class="action_btn">Sign up</a></li>
+                    </div>
+
+                    <i class='bx bx-sun' id="dark"></i>
+                </nav>
+            </div>
+        </header>
+
+        <!--Display the movie gallery-->
+        <div id="galleryView">
+            <section id="movieGallery">
+                <div class="gallery">
+                    <!--Use unordered list to create categories-->
+                    <ul class="options">
+                        <li class="buttons active" data-filter="all">All</li>
+                        <li class="buttons" data-filter="popularMovies">Popular</li>
+                        <li class="buttons" data-filter="newReleasedMovies">Newly released</li>
+                        <li class="buttons" data-filter="upcomingMovies">Upcoming</li>
+                        <li class="buttons" data-filter="awardMovies">Award winning</li>
+                    </ul>
+
+                    <!--Use radio buttons to display the images-->
+                    <div class="image-container">
+
+
+                        <label class="image popularMovies">
+                            <input type="radio" onclick="showText('GalleryImages/popular1.jpg',' John Wick : Chapter 4 is an action crime thriller movie directed by Chad Stahelski. In this movie, John Wick uncovers a path to defeating The High Table and must face off against a new enemy with powerful alliances across the globe. <Released on: 24-03-2023> ')">
+                            <div class="radioButtons">
+                                <img src="GalleryImages/popular1.jpg" alt="JohnWick4">
+                            </div>
+                        </label>
+                        
+
+                        <label class="image popularMovies">
+                            <input type="radio" onclick="showText('GalleryImages/popular2.jpg',' Fast X is an action film directed by Louis Leterrier. It is the sequel to F9 (2021), the tenth main installment, and the eleventh installment overall in the Fast & Furious franchise. Dom and his family are facing their most dangerous enemy yet, Dante Reyes, who is out for revenge. <Released on: 19-05-2023>')">
+                            <div class="radioButtons">
+                                <img src="GalleryImages/popular2.jpg" alt="FastX">
+                            </div>
+                        </label>
+
+
+                        <label class="image popularMovies">
+                            <input type="radio" onclick="showText('GalleryImages/popular3.jpg',' Elle is a psychological thriller film directed by Paul Verhoeven. This is a movie of a successful businesswoman who gets caught up in a game of cat and mouse as she tracks down the unknown man who raped her. <Released on: 11-19-2016> ')">
+                            <div class="radioButtons">
+                                <img src="GalleryImages/popular3.jpg" alt="Elle">
+                            </div>
+                        </label>
+
+
+                        <label class="image popularMovies">
+                            <input type="radio" onclick="showText('GalleryImages/popular4.jpg',' The Conference is a drama/history film directed by Matti Geschonneck. The film is based on the minutes of the Wannsee Conference, a meeting of high-ranking Nazi officials held on January 20, 1942, the systematic extermination of European Jews. <Released on: 06-02-2022>')">
+                            <div class="radioButtons">
+                                <img src="GalleryImages/popular4.jpg" alt="TheConference">
+                            </div>
+                        </label>
+
+
+                        <label class="image newReleasedMovies">
+                            <input type="radio" onclick="showText('GalleryImages/new1.jpg','Shazam is a superhero film based on the DC Comics character of the same name. This is about Billy Batson, a teenager who can transform into the superhero Shazam. <Released on: 17-03-2023>')">
+                            <div class="radioButtons" >
+                                <img src="GalleryImages/new1.jpg" alt="Shazam">
+                            </div>
+                        </label>
+
+
+                        <label class="image newReleasedMovies">
+                            <input type="radio" onclick="showText('GalleryImages/new2.jpg',' Ghosted is a romantic, action, adventure, comedy film directed by Dexter Fletcher. Here, film stars Chris Evans acts as a crop duster pilot who is hired by a mysterious woman (Ana de Armas) to rescue a kidnapped billionaire from a group of mercenaries. <Released on: 21-04-2023> ')">
+                            <div class="radioButtons">
+                                <img src="GalleryImages/new2.jpg" alt="Ghosted">
+                            </div>
+                        </label>
+
+
+                        <label class="image newReleasedMovies">
+                            <input type="radio" onclick="showText('GalleryImages/new3.jpg',' Adam Driver 65 is a science fiction action thriller film. The film stars Adam Driver as Mills, an astronaut who crash-lands on an unknown planet and attempts to escape while surviving with a young girl. <Released on: 17-03-2023> ')">
+                            <div class="radioButtons">
+                                <img src="GalleryImages/new3.jpg" alt="AdamDriver">
+                            </div>
+                        </label>
+
+
+                        <label class="image newReleasedMovies">
+                            <input type="radio" onclick="showText('GalleryImages/new4.jpg',' This is a horror thriller film directed by Julius Avery. The film is based on the real-life experiences of Father Gabriele Amorth, who was the chief exorcist of the Vatican for over 30 years. Amorth claimed to have performed over 100,000 exorcisms during his career. <Released on: 07-04-2023>')">
+                            <div class="radioButtons">
+                                <img src="GalleryImages/new4.jpg" alt="ThePopesExorcist">
+                            </div>
+                        </label>
+
+
+                        <label class="image upcomingMovies">
+                            <input type="radio" onclick="showText('GalleryImages/upcoming1.jpg',' Blue Beetle is an upcoming superhero film based on the DC comics character Jaime Reyes. This film is directed by Angel Manuel Soto. <To be released on: 18-08-2023>')">
+                            <div class="radioButtons">
+                                <img src="GalleryImages/upcoming1.jpg" alt="BlueBeetle">
+                            </div>
+                        </label>
+
+
+                        <label class="image upcomingMovies">
+                            <input type="radio" onclick="showText('GalleryImages/upcoming2.jpg',' Inside Out 2 is an upcoming animated film by Pixar. This time it is about the fluctuating emotions of 11-year-old Riley (Kaitlyn Dias) as she struggled to adapt to her parents moving her to a new city. <To be release on: 14-06-2024> ')">
+                            <div class="radioButtons">
+                                <img src="GalleryImages/upcoming2.jpg" alt="InsideOut2">
+                            </div>
+                        </label>
+
+
+                        <label class="image upcomingMovies">
+                            <input type="radio" onclick="showText('GalleryImages/upcoming3.jpg',' Five Nights at Freddy is an upcoming horror film directed by Emma Tammi. The terrifying horror game phenomenon becomes a blood-chilling cinematic event. The film follows a troubled security guard as he begins working at Freddy Fazbear’s Pizza. <To be released on: 27-10-2023>')">
+                            <div class="radioButtons">
+                                <img src="GalleryImages/upcoming3.jpg" alt="FiveNightsAtFreddys">
+                            </div>
+                        </label>
+
+
+                        <label class="image upcomingMovies">
+                            <input type="radio" onclick="showText('GalleryImages/upcoming4.jpg',' Jawan is an upcoming action thriller film. This outlines the emotional journey of a man who is set to rectify the wrongs in society. <To be released on: 07-09-2023>')">
+                            <div class="radioButtons">
+                                <img src="GalleryImages/upcoming4.jpg" alt="Jawan">
+                            </div>
+                        </label>
+
+
+                        <label class="image awardMovies">
+                            <input type="radio" onclick="showText('GalleryImages/award1.jpg',' The Lord of the Rings is an epic fantasy adventure film directed by Peter Jackson, based on the novel by J.R.R. Tolkien. The story follows the quest to destroy a powerful ring that could bring darkness to the world. This film has been a huge succes as it has won all 11 Oscars. <Released on: 2003>')">
+                            <div class="radioButtons">
+                                <img src="GalleryImages/award1.jpg" alt="TheLordOfRings">
+                            </div>
+                        </label>
+
+                        
+                        <label class="image awardMovies">
+                            <input type="radio" onclick="showText('GalleryImages/award2.jpg','The Last Passport is a drama film directed by Kent Smith and David Temple. This film about a mysterious old man who enters a magical passport office. The film takes the audience on a captivating journey filled with enchanting encounters. <Released on: 20-06-2009>')">
+                            <div class="radioButtons">
+                                <img src="GalleryImages/award2.jpg" alt="TheLastPassport">
+                            </div>
+                        </label>
+                    </div>
+
+                </div>           
+            </section>
+
+            <!--Display the enlarged image and a description of the image-->
+            <section id="viewMaxImage">
+                <div id="maxImage">
+                    <div id="largeImage">
+                        <img id="maximisedImage"></img>
+                    </div>
+                    <div id="displayContent">
+                        <p id="imageContent"></p>
+                        <br><br>
+                        <a href="#movieGallery">
+                            <div id="scrollUp"></div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+        
+        
+        <!--Footer-->
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col">
+                        <ul>
+                            <li><a href="#"><img id="myImage" src="logo/logo.png" alt="logo">
+                                </a></li>
+                            5th Avenue st, manhattan<br>
+                            New York, NY 10001 <br>
+                            Call us:+94 77 575 9771
+
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Legal</h4>
+                        <ul>
+                            <li><a href="#">Terms of Use</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Security</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Account</h4>
+                        <ul>
+                            <li><a href="#">My Account</a></li>
+                            <li><a href="#">Watchlist</a></li>
+                            <li><a href="#">Collections</a></li>
+                            <li><a href="#">User Guide</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Newsletter</h4>
+                        <ul>
+                            <li><a href="NewsLetter.html" target="_blank">Subscribe now &nbsp;<i class="uil-solid uil-envelope"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Creator</h4>
+                        <ul>
+                            <li><a href="Minuri.html" target="_blank">Editors Page &nbsp;</i></a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Follow us</h4>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/login/" aria-label="Facebook"><i class="uil-solid uil-facebook-f"> </i></a>
+                            <a href="https://twitter.com/i/flow/login?lang=en" aria-label="Twitter"><i class="uil-solid uil-twitter"> </i></a>
+                            <a href="https://www.instagram.com/accounts/login/" aria-label="Instagram"><i class="uil-solid uil-instagram"> </i></a>
+                            <a href="https://www.linkedin.com/feed/" aria-label="LinkedIn"><i class="uil-solid uil-linkedin"> </i></a>
+                         </div>
+                         
+                    </div>
+
+                </div>
+
+            </div>
+        </footer>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
+        <script src="gallery.js" defer></script>
+        <script src="Index.js" defer></script>
+
+    </body>
+</html>

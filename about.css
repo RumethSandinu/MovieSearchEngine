@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@400;500;600;700&display=swap');
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* light theme colors */
+:root {
+    --main-color: #b60000;
+    --text-color: #000000;
+    --bg-color: #ffffff;
+}
+
+/* Dark theme colors */
+.darktheme {
+    --bg-color: #000000;
+    --text-color: #fff;
+    --main-color: #b60000;
+}
+
+.hero {
+    height: 18vh;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 100;
+    font-size: 16px;
+}
+
+/* Background color */
+body {
+    background: black;
+}
+
+/* Background Decoration */
+section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#f00, #f0f);
+    clip-path: circle(25% at right 90%);
+    z-index: -1;
+}
+
+section::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#2196f3, #e91e63);
+    clip-path: circle(18% at 9% 9%);
+    z-index: -1;
+}
+
+#heading {
+    padding-top: 10px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 28px;
+    padding-bottom: 2px;
+}
+
+/* Team member container */
+.about-container {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 40px 0;
+}
+
+/* card styles */
+.about-container .card {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background: rgb(255, 255, 255, 0.05);
+    margin: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    border: 2px solid var(--main-color);
+}
+
+/* Card content */
+.about-container .card .card-content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+/* Card hover styles */
+.about-container .card:hover .card-content {
+    opacity: 1;
+    transform: translateY(-20px);
+}
+
+/* Team member image box */
+.about-container .card .card-content .imgbox {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 10px solid rgba(0, 0, 0, 0.25);
+}
+
+/* Team member image  */
+.about-container .card .card-content .imgbox img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Team member content box */
+.about-container .card .card-content .contentbox {
+    color: white;
+    text-transform: uppercase; /* All the letters are capitalized */
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    margin: 20px 0 10px;
+    line-height: 1.1em;
+}
+
+/* Team member name */
+.about-container .card .card-content .contentbox h3 {
+    color: #ffffff;
+    visibility: hidden; /* Visibility is hidden initially */
+}
+
+/* Team member name hover */
+.about-container .card:hover .card-content .contentbox h3 {
+    visibility: visible; /* Visible when mouse hover on the card */
+}
+
+/* Team member task */
+.about-container .card .card-content .contentbox span {
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: initial;
+    visibility: hidden; /* Visibility is hidden initially */
+}
+
+/* Team member task hover */
+.about-container .card:hover .card-content .contentbox span {
+    visibility: visible; /* Visible when mouse hover on the card */
+}
+
+/* Team member button */
+.about-container .card .card-content .contentbox button {
+    position: absolute;
+    font-size: 14px;
+    border: none;
+    outline: none;
+    width: 100px;
+    padding: 5px;
+    background: var(--main-color);
+    border-radius: 4px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    visibility: hidden; /* Visibility is hidden initially */
+}
+
+/* Team member button hover */
+.about-container .card:hover .card-content .contentbox button {
+    visibility: visible; /* Visible when mouse hover on the card */
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+.action_btn{
+    margin-right: 10px;
+}
+.uil-bars{
+    margin-right: 80px;
+}

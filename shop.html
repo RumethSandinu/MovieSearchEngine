@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Products Page</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="Index.css">
+    <link rel="stylesheet" href="Shop.css">
+    <!-- Display favicon -->
+    <link rel="icon" type="image/x-icon" href="logo/LogoFavicon.ico">
+
+
+</head>
+<body>
+    <header>
+        <div class="hero">
+            <nav>
+                <a href="Index.html"><img class="logo" src="logo/logo2.png" alt="Image"></a>
+                <ul>
+                    <li><a href="Index.html"><i class="uil uil-home"></i>&nbsp;Home</a></li>
+                    <li><a href="gallery.html"><i class="uil uil-clapper-board"></i>&nbsp;Gallery</a></li>
+                    <li><a href="FavouritesPage.html"><i class="uil uil-favorite"></i>&nbsp;Favourites</a></li>
+                    <li><a href="about.html"><i class="uil uil-user-circle"></i>&nbsp;About Us</a></li>
+                    <li><a href="shop.html"><i class="uil uil-shopping-bag"></i>&nbsp;Shop</a></li>
+                    <li><a href="quiz.html"><i class="uil uil-folder-question"></i>&nbsp;Quiz</a></li>
+                    <li><a href="commentSourceCode.html"><i class="uil uil-comment-alt-lines"></i>&nbsp;Feedbacks</a></li>
+    
+    
+                </ul>
+                <div class="btn">
+                    <div class="button-container">
+                        <a href="loginPage.html" class="action_btn">Sign up</a>
+                        <div class="toggle_btn">
+                            &nbsp;&nbsp;<i class="uil-solid uil-bars"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="main">
+                    <!--Cart Icon-->       
+                    <i class='bx bx-cart' id="cart-icon"><span id="cart-item-count" class="cart-item-count" >0</span></i>
+                </div>
+                <div class="cart">
+                    <h2 class="cart-title">Your Cart</h2>
+                    <!--Content-->
+                    <div class="cart-content" id="cart-content">
+                    </div>
+                    <!--Total-->
+                    <div class="total">
+                        <div class="total-title">Total</div>
+                        <div class="total-price">$0</div>
+                    </div>
+                    <!--Buy Button-->
+                    <button type="button" class="btn-buy" id="checkout-btn"><a href="form.html" target="_self">Check-Out</a></button>
+                    <!--Cart close-->
+                    <i class='bx bx-x' id="close-cart"></i>
+                </div>
+                <div class="dropdown_menu">
+                    <li><a href="Index.html"><i class="uil uil-home"></i>&nbsp;Home</a></li>
+                    <li><a href="gallery.html"><i class="uil uil-clapper-board"></i>&nbsp;Gallery</a></li>
+                    <li><a href="FavouritesPage.html"><i class="uil uil-favorite"></i>&nbsp;Favourites</a></li>
+                    <li><a href="about.html"><i class="uil uil-user-circle"></i>&nbsp;About Us</a></li>
+                    <li><a href="shop.html"><i class="uil uil-shopping-bag"></i>&nbsp;Shop</a></li>
+                    <li><a href="quiz.html"><i class="uil uil-folder-question"></i>&nbsp;Quiz</a></li>
+                    <li><a href="commentSourceCode.html"><i class="uil uil-comment-alt-lines"></i>&nbsp;Feedbacks</a></li>
+                    <li><a href="loginPage.html" class="action_btn">Sign up</a></li>
+    
+                </div>
+                <i class='bx bx-sun' id="dark"></i>
+            </nav>
+        </div>
+    </header>
+    
+    <!--Shop-->
+    <section class="shop containers">
+        <button id="increase">A+</button>
+        <button id="decrease">A-</button>
+        <h2 class="section-title">Shop Products</h2>
+        <!--Content-->
+        <div class="shop-content">
+            <!--Box1-->
+            <div class="product-box">
+                <img src="Products/Item1.jpg" alt="" class="product-img">
+                <h2 class="product-title">XREAL AIR AR GLASSES</h2>
+                <div class="rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked "></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <span class="price">$150</span>
+                <button class="more-info">Read More</button>
+                <p class="details">
+                    Smart Glasses with Massive 201" Micro-OLED Virtual Theater, Augmented Reality Glasses,
+                    Watch, Stream, and Game on PC/Android/iOS Consoles & Cloud Gaming Compatible
+                </p>
+                <i class='bx bx-cart add-cart' data-title="XREAL AIR AR GLASSES" data-price="150" data-img="Products/Item1.jpg"></i>
+            </div>
+
+            <!--Box2-->
+            <div class="product-box">
+                <img src="Products/Item2.jpg" alt="" class="product-img">
+                <h2 class="product-title">NETFLIX GIFT CARD</h2>
+                <div class="rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <span class="price">$50</span>
+                <button class="more-info">Read More</button>
+                <p class="details">
+                    Gift cards do not expire, which is printed on the back of each card.Gift cards are non-refundable. 
+                    Once a Netflix gift card is applied to an account, you can watch Netflix until the gift card balance runs out.
+                    Gift cards cannot be reloaded
+                </p>
+                <i class='bx bx-cart add-cart' data-title="NETFLIX GIFT CARD" data-price="50" data-img="Products/Item2.jpg"></i>
+            </div>
+
+            <!--Box3-->
+            <div class="product-box">
+                <img src="Products/Item3.jpg" alt="" class="product-img">
+                <h2 class="product-title">UUO 4K PROJECTOR</h2>
+                <div class="rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <span class="price">$270</span>
+                <button class="more-info">Read More</button>
+                <p class="details">
+                    Native 1080P Projector for Outdoor Home. Movie Projector support 4K HD Video ±50° Digital Keystone & 300’’ Projection Area. 
+                    Compatible with TV Stick,Laptop,PS5,X-Box,iOS Android
+                </p>
+                <i class='bx bx-cart add-cart' data-title="UUO 4K PROJECTOR" data-price="270" data-img="Products/Item3.jpg"></i>
+            </div>
+
+            <!--Box4-->
+            <div class="product-box">
+                <img src="Products/Item4.jpg" alt="" class="product-img">
+                <h2 class="product-title">Spider-Man Funko POP</h2>
+                <div class="rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <span class="price">$15.82</span>
+                <button class="more-info">Read More</button>
+                <p class="details">
+                    Funko POP Marvel: Spider-Man: No Way Home.   
+                    Color: Spider-Man in Black and Gold Suit.  Size: 3.75 inches
+                </p>
+                <i class='bx bx-cart add-cart' data-title="Spider-Man Funko POP" data-price="15.82" data-img="Products/Item4.jpg"></i>
+            </div>
+
+            <!--Box5-->
+            <div class="product-box">
+                <img src="Products/Item5.jpg" alt="" class="product-img">
+                <h2 class="product-title">Avatar Posters - Avatar 2</h2>
+                <div class="rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <span class="price">$19.80</span>
+                <button class="more-info">Read More</button>
+                <p class="details">Avatar Posters - Avatar 2 | avatar the way of water poster Poster</p>
+                <i class='bx bx-cart add-cart' data-title="Avatar Posters - Avatar 2" data-price="19.80" data-img="Products/Item5.jpg"></i>
+            </div>
+
+            <!--Box6-->
+            <div class="product-box">
+                <img src="Products/Item6.jpg" alt="" class="product-img">
+                <h2 class="product-title">The Making of the Movie Trilogy</h2>
+                <div class="rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <span class="price">$72.59</span>
+                <button class="more-info">Read More</button>
+                <p class="details">The Lord of the Rings: The Making of the Movie Trilogy is a lavishly illustrated, behind-the-scenes, definitive account of the creation of an epic film experience. </p>
+                <i class='bx bx-cart add-cart' data-title="The Lord of the Rings: The Making of the Movie Trilogy" data-price="72.59" data-img="Products/Item6.jpg"></i>
+            </div>
+
+            <!--Box7-->
+            <div class="product-box">
+                <img src="Products/Item7.jpg" alt="" class="product-img">
+                <h2 class="product-title">Disney+ Subscription</h2>
+                <div class="rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <span class="price">$70</span>
+                <button class="more-info">Read More</button>
+                <p class="details">Subscription card entitles the holder to 12 months of Disney+, which will be credited to your account upon redemption.</p>
+                <i class='bx bx-cart add-cart' data-title="Disney+ Subscription" data-price="70" data-img="Products/Item7.jpg"></i>
+            </div>
+
+            <!--Box8-->
+            <div class="product-box">
+                <img src="Products/Item8.jpg" alt="" class="product-img">
+                <h2 class="product-title">Movie Night Package</h2>
+                <div class="rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <span class="price">$26.99</span>
+                <button class="more-info">Read More</button>
+                <p class="details">Redbox Movie Night Care Package with Popcorn, Candy and Movie Rental</p>
+                <i class='bx bx-cart add-cart' data-title="Movie Night Package" data-price="26.99" data-img="Products/Item8.jpg"></i>
+            </div>
+        </div>    
+    </section>
+
+    <!--Item Details Pop-Up-->
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <h3 id="popup-title"></h3>
+            <img id="popup-img" src="" alt="">
+            <p id="popup-description"></p>
+            <span class="price" id="popup-price"></span><br>
+            <button type="button" class="popup-close">Back</button>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <ul>
+                        <li><a href="#"><img src="logo/logo.png" id="footer-logo" alt="logo"></a></li>
+                        <p>5th Avenue st, manhattan<br>
+                            New York, NY 10001 <br>
+                        Call us:+94 77 575 9771 </p><br>
+
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Terms of Use</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Security</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Account</h4>
+                    <ul>
+                        <li><a href="#">My Account</a></li>
+                        <li><a href="#">Watchlist</a></li>
+                        <li><a href="#">Collections</a></li>
+                        <li><a href="#">User Guide</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Newsletter</h4>
+                    <ul>
+                        <li><a href="NewsLetter.html" target="_blank">Subscribe now &nbsp;<i class="uil-solid uil-envelope"></i></a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Creator</h4>
+                    <ul>
+                        <li><a href="Pehansi.html" target="_blank">Editors Page &nbsp;</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow us</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/login/" aria-label="Facebook"><i class="uil-solid uil-facebook-f"> </i></a>
+                        <a href="https://twitter.com/i/flow/login?lang=en" aria-label="Twitter"><i class="uil-solid uil-twitter"> </i></a>
+                        <a href="https://www.instagram.com/accounts/login/" aria-label="Instagram"><i class="uil-solid uil-instagram"> </i></a>
+                        <a href="https://www.linkedin.com/feed/" aria-label="LinkedIn"><i class="uil-solid uil-linkedin"> </i></a>
+                     </div>
+                     
+                </div>
+            </div>
+        </div>
+    </footer>   
+    <script src="Shop.js" defer></script>
+    <script src="Index.js" defer></script> 
+</body>
+</html>
+

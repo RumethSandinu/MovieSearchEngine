@@ -1,0 +1,142 @@
+/* Styles for the popup */
+@import url('http://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+:root {
+  --main-color: #b60000;
+  --text-color: #000000;
+  --bg-color: #ffffff;
+}
+
+/* Dark theme color scheme */
+.darktheme {
+  --bg-color: #000000;
+  --text-color: #fff;
+  --main-color: #b60000;
+}
+
+.hero {
+  height: 18vh;
+}
+
+/* Styles for navigation links in the header */
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 17px;
+}
+
+body {
+  color: #ffffff;
+  background-image: url(Images/popcornImg.jpg);
+  background-size: contain;
+}
+
+/* Styles for the start quiz section */
+.startQuiz {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Styles for the content within the start quiz section */
+.content {
+  max-width: 600px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Heading styles within the content */
+.content h2 {
+  font-size: 40px;
+  font-weight: 700;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.336);
+}
+
+/* Paragraph styles within the content */
+.content p {
+  font-size: 16px;
+  text-align: center;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  margin-bottom: 30px;
+}
+
+/* Styles for the start button within the content */
+.content .start-btn {
+  width: 190px;
+  height: 55px;
+  background: #8c4343;
+  border: 2px solid #fff;
+  outline: none;
+  border-radius: 6px;
+  box-shadow: 0 0 10px #ff6200;
+  font-size: 18px;
+  color: #fff;
+  letter-spacing: 1px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+  .content .start-btn:hover {
+    background: #ff5733; /* Change the background color to your desired color */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Add a subtle box-shadow on hover */
+    color: #fff; /* Change the text color to ensure readability */
+    border: 2px solid #ff5733; /* Add a border with the same color as the background */
+    transition: background 0.3s ease-in-out; /* Add a smooth transition */
+  }
+  
+/* The popup overlay */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    animation: fadeIn 0.3s ease-in-out; /* Fade-in animation */
+    z-index: 999; 
+  }
+  
+  /* The popup content box */
+  .popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(135deg, #f9c942, #e87642);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 90%; 
+    max-height: 80%; 
+    overflow-y: auto; /* Add vertical scroll if content overflows */
+  }
+  
+  /* The close button */
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    color: #999;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  /* Close button on hover */
+  .close:hover {
+    color: #000;
+  }
+  
+  
+

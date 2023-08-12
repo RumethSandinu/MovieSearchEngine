@@ -1,0 +1,284 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins', sans-serif;
+}
+
+body{
+  background: radial-gradient(var(--main-color),var(--bg-color));
+}
+
+/* Applying styles on the  navigation bar */
+.hero{
+  height: 18vh;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 17px;
+}
+
+:root{
+  --main-color: #b60000 ;
+  --text-color: #000000; 
+  --bg-color:#ffffff ;
+}
+.darktheme{
+  --bg-color: #000000;
+  --text-color: #fff;
+  --main-color: #b60000;
+}
+
+/* Applying styles on the form */
+.Forms{
+  width: 500px;
+  height: 680px;
+  margin: 8% auto;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  background: #f1f1f1d1;
+  display: flex;   
+  font-family: 'Poppins',sans-serif;
+}
+
+/* To adjust the content of all the three steps */
+.Forms form{
+  width: 300px;
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  transition: 0.7s;  /* To move between each step of the form */
+}
+
+
+/* Adjust the topics of each step */
+.steps {
+  text-align: center;
+  color: #560000;
+  margin-bottom: 40px;
+  font-size: 20px;
+  font-weight: bold;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+
+/* Apply styles in buttons of this form */
+form button{
+  width: 70px;
+  height: 40px;
+  margin: 0 10px;
+  background: linear-gradient(to right, #B60000,#fb7474);
+  border-radius: 30px;
+  border: 0;
+  outline: 0;
+  color: #fedada;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Align and add styles to the user input area */
+.Forms .input1 input[type="text"],
+.Forms .input1 input[type="date"],
+.Forms .input1 input[type="email"],
+.Forms .input1 input[type="password"],
+.Forms .input1 input[type="number"]{
+width: 300px;
+height: 2px;
+padding: 20px 0px 20px 10px;
+margin: 10px 0;
+border: none;
+border-bottom: 2px solid;
+margin-top: 10px;
+border-radius: 8px;
+position: relative;
+font-size: 16px;
+}
+
+/* Styling gender option */
+#gender{
+  width: 300px;
+  height: 40px;
+  margin-top: 10px;
+  border: none;
+  border-bottom: 2px solid;
+  margin-top: 10px;
+  border-radius: 8px;
+  position: relative;
+  font-size: 15px;
+  color: #686868;
+}
+
+/* Display the label in the placeholder in the first step of the form */
+::placeholder{
+  color: #686868;
+  font-size: 15px;
+}
+
+
+/* Show password using clickable images */
+.password-icon {
+  position: absolute;
+  top: 76%;
+  right: 10px;
+  transform: translateY(10px);
+  cursor: pointer;
+  color: #686868;
+}
+
+/* Moving from first step to second step */
+#UserPreference1{
+  left: 500px;
+}
+
+/* Moving from second step to third step */
+#UserPreference2{
+  left: 500px;
+}
+
+/* Styling the labels, inputs and the checkboxes of the second step */
+.input2 label{
+  padding: 2%;
+  font-size: 16px;
+  margin-left: 20px;
+  font-weight: bold;
+  margin-bottom: 100px;
+}
+
+.input2 input{
+  font-size: 20px;
+  margin-top: 15px;
+
+}
+
+.checkbox-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  margin-top: 8px;
+}
+
+
+
+/* Styling the labels, inputs and the checkboxes of the third step */
+.input3{
+  margin-top: 40px;
+}
+
+.input3 label{
+  margin-left: 50px;
+  color: #560000;
+  font-size: 15px;
+  font-weight: bold;
+  font-style: italic;
+}
+.input3 input{
+  width: 300px;
+  height: 2px;
+  padding: 20px 0px 20px 10px;
+  border: none;
+  border-bottom: 2px solid;
+  margin-top: 10px;
+  border-radius: 8px;
+  position: relative;
+  font-size: 16px;
+}
+
+.input3 #noOfMovies,#language,#occassion{
+  width: 310px;
+  height: 40px;
+  margin-top: 10px;
+  border: none;
+  border-bottom: 2px solid;
+  margin-top: 10px;
+  border-radius: 8px;
+  position: relative;
+  font-size: 15px;
+  color: #686868;
+}
+
+/* Animation that displays when the user move forward in the form */
+#step-row{
+  width: 600px;
+  height: 90px;
+  margin: 0 auto;
+  display:flex;
+  align-items: center;
+  box-shadow: 0 -1px 5px -1px #000;
+  position: relative;
+}
+.step-col{
+  width: 150px;
+  text-align: center;
+  color: #ffffff;
+  position: relative;
+}
+#progress{
+  position: absolute;
+  height: 100%;
+  width: 150px;
+  background: linear-gradient(to right, #B60000,#ff8787);
+  transition: 1s;
+}
+
+/* Animation */
+#progress::after{
+  content: '';
+  height: 0;
+  width: 0;
+  border-top: 44px solid transparent;
+  border-bottom: 44px solid transparent;
+  position: absolute;
+  right: -20px;
+  top: 0;
+  border-left: 20px solid #ff8787;
+}
+
+/* Buttons in the first step of the form */
+#buttonsPageOne{
+  margin-left: 100px;
+  margin-top: 20px;
+}
+
+/* Buttons in the second step of the form */
+#buttonsPageTwo{
+  margin-left: 60px;
+  margin-top: 70px;
+}
+
+/* Buttons in the third step of the form */
+#buttonsPageThree{
+  margin-left: 60px;
+  margin-top: 100px;
+}
+
+
+/* Add styles to the error messages in the form */
+.input1 .error {
+  color: #ff2954;
+  font-size: 12px;
+  margin-left: 10px;
+  margin-top: 2px;
+}
+
+
+#error_genre{   
+  font-size: 15px;
+  color: #ff2954;
+  margin-left: 55px;
+  margin-bottom: 5px;
+}
+
+.input3 .error{
+  color: #ff2954;
+  font-size: 12px;
+  margin-left: 10px;
+  margin-top: 2px;
+  margin-bottom: 20px;
+}
+#hiddenLabel{
+  display: none;
+}

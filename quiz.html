@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Quiz</title>
+      <!-- Link to external CSS stylesheets -->
+      <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+      <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+      <link rel="stylesheet" href="Index.css">
+      <link rel="stylesheet" href="quiz.css">
+      <!-- Display favicon -->
+      <link rel="icon" type="image/x-icon" href="logo/LogoFavicon.ico">
+      
+  </head>
+  <body>
+    <!-- Website header section -->
+    <header>
+      <div class="hero">
+        <nav>
+              <!-- Logo and navigation menu items -->
+            <a href="Index.html"><img class="logo" src="logo/logo2.png" alt="Image"></a>
+            <ul>
+                <li><a href="Index.html"><i class="uil uil-home"></i>&nbsp;Home</a></li>
+                <li><a href="gallery.html"><i class="uil uil-clapper-board"></i>&nbsp;Gallery</a></li>
+                <li><a href="FavouritesPage.html"><i class="uil uil-favorite"></i>&nbsp;Favourites</a></li>
+                <li><a href="about.html"><i class="uil uil-user-circle"></i>&nbsp;About Us</a></li>
+                <li><a href="shop.html"><i class="uil uil-shopping-bag"></i>&nbsp;Shop</a></li>
+                <li><a href="quiz.html"><i class="uil uil-folder-question"></i>&nbsp;Quiz</a></li>
+                <li><a href="commentSourceCode.html"><i class="uil uil-comment-alt-lines"></i>&nbsp;Feedbacks</a></li>
+            </ul>
+            <!-- Button and toggle for responsive navigation -->
+            <div class="btn">
+                <div class="button-container">
+                    <a href="loginPage.html" class="action_btn">Sign up</a>
+                    <div class="toggle_btn">
+                        &nbsp;&nbsp;<i class="uil-solid uil-bars"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- Dropdown menu for responsive navigation -->
+            <div class="dropdown_menu">
+                <li><a href="Index.html"><i class="uil uil-home"></i>&nbsp;Home</a></li>
+                <li><a href="gallery.html"><i class="uil uil-clapper-board"></i>&nbsp;Gallery</a></li>
+                <li><a href="FavouritesPage.html"><i class="uil uil-favorite"></i>&nbsp;Favorites</a></li>
+                <li><a href="about.html"><i class="uil uil-user-circle"></i>&nbsp;About Us</a></li>
+                <li><a href="shop.html"><i class="uil uil-shopping-bag"></i>&nbsp;Shop</a></li>
+                <li><a href="quiz.html"><i class="uil uil-folder-question"></i>&nbsp;Quiz</a></li>
+                <li><a href="commentSourceCode.html"><i class="uil uil-comment-alt-lines"></i>&nbsp;Feedbacks</a></li>
+                <li><a href="loginPage.html" class="action_btn">Sign up</a></li>
+    
+            </div>
+             <!-- Icon for toggling dark mode -->
+            <i class='bx bx-sun' id="dark"></i>
+    
+        </nav>
+    </header>
+    
+     <!-- Section to start the quiz -->
+    <section class="startQuiz">
+      <div class="content">
+          <h2>Welcome to Movie Quiz!</h2>
+          <p> Test your knowledge of the silver screen with our exciting movie quiz. Challenge yourself and see if you can earn the title of Movie Master!
+                        Are you ready to put your movie expertise to the test?  Good luck and may the magic of the movies be with you!
+          </p>
+        <button class="start-btn" onclick="startQuiz()">Start Quiz</button>
+
+      </div>
+    </section>
+    <!-- Footer section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                  <!-- Footer content with columns and links -->
+                <div class="footer-col">
+                    <ul>
+                        <li><a href="#"><img id="footer-logo" src="logo/logo.png" alt="Logo Image">
+                            </a></li>
+                        <p>5th Avenue st, manhattan<br>
+                        New York, NY 10001 <br>
+                        Call us:+94 77 575 9771</p><br>
+
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Terms of Use</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Security</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Account</h4>
+                    <ul>
+                        <li><a href="#">My Account</a></li>
+                        <li><a href="#">Watchlist</a></li>
+                        <li><a href="#">Collections</a></li>
+                        <li><a href="#">User Guide</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Newsletter</h4>
+                    <ul>
+                        <li><a href="NewsLetter.html" target="_blank">Subscribe now &nbsp;<i class="uil-solid uil-envelope"></i></a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Creator</h4>
+                    <ul>
+                        <li><a href="Vihindi.html" target="_blank">Editors Page &nbsp;</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow us</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/login/" aria-label="Facebook"><i class="uil-solid uil-facebook-f"> </i></a>
+                        <a href="https://twitter.com/i/flow/login?lang=en" aria-label="Twitter"><i class="uil-solid uil-twitter"> </i></a>
+                        <a href="https://www.instagram.com/accounts/login/" aria-label="Instagram"><i class="uil-solid uil-instagram"> </i></a>
+                        <a href="https://www.linkedin.com/feed/" aria-label="LinkedIn"><i class="uil-solid uil-linkedin"> </i></a>
+                     </div>
+                     
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
+        <!-- Popup -->
+  <div class="popup" id="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup()">&times;</span>
+      <h2 id="popup-message">Welcome to the Popup!</h2>
+      <!-- badge image here -->
+      <img src="" alt="Badge" id="badge-image" />
+    </div>
+  </div>
+  <script src="quiz.js" defer></script>
+      <script src="Index.js" defer></script>
+  </body>
+</html>

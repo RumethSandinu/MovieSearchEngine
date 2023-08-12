@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+/* Dark mode, light mode feature*/
+:root{
+    --main-color: #b60000 ;
+    --text-color: #000000; 
+    --bg-color:#ffffff ;
+}
+.darktheme{
+    --bg-color: #000000;
+    --text-color: #fff;
+    --main-color: #b60000;
+}
+
+/* Change font color with the change of color mode*/
+#imageContent{
+    color: var(--text-color);
+}
+
+/* Navigation bar */
+.hero{
+    height: 14vh;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 17px;
+}
+
+/* Add common colour for both the sections*/
+#galleryView{
+    background: radial-gradient(var(--main-color),var(--bg-color));
+}
+
+/* Adjust the section where the enlarged image is displayed */
+.gallery #viewMaxImage{
+    width: 100%;
+    min-height: 100vh;
+    padding-bottom: 10px;
+    display: block;  /* To hide the second section until user clicks an image*/
+}
+
+/* Align the elements of the list horizontally */
+.gallery .options {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 70px 0;
+    list-style: none;
+}
+
+/* Make the appearance of the elements of the list as buttons*/
+.gallery .options .buttons {
+    height: 40px;
+    width: 160px;
+    background: #ffd8d8;
+    color: #616161;
+    font-size: 20px;
+    line-height: 40px;
+    cursor: pointer;
+    margin: 20px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+    text-align: center;
+}
+
+/* Hide the radio buttons */
+.image-container [type="radio"]{
+    display: none;
+}
+
+/* Style added to the above created buttons */
+.gallery .options .buttons.active {
+    background: rgb(255, 101, 101);
+    color: #000000;
+}
+
+/* Adjust the thumbnail images */
+.gallery .image-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.gallery .image-container .image {
+    height: 150px;
+    width: 300px;
+    overflow: hidden;
+    border: 2px solid #696969;
+    margin: 40px;  
+}
+
+.gallery .image-container .image:hover img {
+    transform: scale(1.2);
+}
+
+/* Adjust the image to fit inside the box */
+.gallery .image-container img {
+    height: 100%;
+    width: 100%;
+}
+
+
+
+/* A effect to return to the top of the page */
+#scrollUp {
+    height: 80px;
+    width: 50px;
+    position: absolute;
+    left: 50%;
+    border-radius: 50px;
+    cursor: pointer;
+
+}
+
+
+/* Animation */
+#scrollUp::before,
+#scrollUp::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 50px;
+    width: 50px;
+    transform: translate(-50%, -100%) rotate(225deg);
+    border: 15px solid rgb(255, 79, 79);
+    border-top: transparent;
+    border-left: transparent;
+    animation: scrollUp 1.5s ease-in-out infinite;
+    
+}
+
+#scrollUp::before {
+    top: 20%;
+    animation-delay: 0.5s;
+}
+
+
+@keyframes scrollUp {
+    0% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+    }
+    60% {
+        opacity: 1;
+    }
+    100% {
+        top: 90%;
+        opacity: 0;
+    }
+}
+
+
+/* Increase the size of the image */
+#maximisedImage{
+    display: flex;
+    max-width: 600px;
+    max-height: 400px;
+}
+
+
+/* Adjust the content of the description under each image */
+#displayContent{
+    text-align: justify;
+    font-size: 25px;
+    color: white;
+    font-style: italic;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+    
+}
+
+/* Align the text under the image */
+#maxImage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+

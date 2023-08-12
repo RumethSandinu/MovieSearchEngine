@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  font-family: "poppins",sans-serif;
+}
+
+/* Add a video in the background*/
+.video-container {
+  position:relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Position the video and add some effects */
+.video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(3px);
+}
+
+/* Display the content */
+#text-container {
+  width: 70%;
+  height: 80%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.725),rgba(10, 10, 10, 0.818)),url('PresentationImg/background.png');
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #ffffff;
+  border-style:dotted;
+  border-radius: 40px;
+  opacity: 0.9;
+  z-index: 3;
+}
+
+
+/* Adjust the animated topic */
+#animated-text {
+  font-style: italic;
+  font-size: 70px;
+  text-decoration: underline;
+}
+
+
+/* Add effects to the names of the group members */
+.group-members {
+  text-align: center;
+  line-height: 35px;
+  font-size: 28px;
+}
+
+/* Display the editors page */
+#editorPage {
+  position: absolute;
+  top: 95%;
+  left: 1%;
+  font-size: 18px;
+  text-decoration: none;
+  color: #ffacac;
+  z-index: 3; 
+}

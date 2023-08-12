@@ -1,0 +1,145 @@
+/* Define custom color variables for the entire document */
+:root{
+    --main-color: #b60000 ;
+    --text-color: #000000; 
+    --bg-color:#fff ;
+  }
+  /* Define styles for the dark theme */
+  .darktheme{
+    --bg-color: #000000;
+    --text-color: #fff;
+    --main-color: #b60000;
+}
+.hero{
+    height: 14vh;
+   
+}
+/* Styling for anchor tags within list items in the navigation menu */
+nav ul li a{
+    text-decoration: none;
+    font-size: 17px;
+} 
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.66),rgba(0, 0, 0, 0.77));
+    font-family: 'Poppins', sans-serif;
+}
+section{
+    margin-bottom: 50px;
+}
+
+/* Styles for the form  */
+#form {
+    width: 300px;
+    margin: 10vh auto 0 auto;
+    padding: 20px;
+    background-color: whitesmoke;
+    border-radius: 4px;
+    font-size: 12px;
+}
+/* Animation styles for the form heading */
+#form h2{
+    margin-top: 15px;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2s steps(25),
+            cursor .4s step-end infinite alternate;
+}
+/* Keyframes animation for the cursor effect */
+@keyframes cursor{
+    50%{ border-color: transparent;}
+}
+/* Keyframes animation for typing effect in the form heading */
+@keyframes typing{
+    from {width: 0}
+}
+/* Styles for the submit button inside the form */
+#form button {
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+    color: #fedada;
+    background:linear-gradient(to right, #B60000,#ff8787);
+    border: none;
+    border-radius: 4px;
+}
+/* Styles for form input controls */
+.input-control {
+    display: flex;
+    flex-direction: column;
+}
+/* Styles for input elements inside .input-control */
+.input-control input {
+    border: 2px solid #f0f0f0;
+	border-radius: 4px;
+	display: block;
+	font-size: 12px;
+	padding: 10px;
+	width: 100%;
+}
+/* Styles for the rating element inside .input-control */
+.input-control .rating {
+        display: flex;
+        justify-content: center;
+        margin-top: 5px;
+    }
+
+    .input-control .rating input[type="radio"] {
+        display: none;
+    }
+
+    .input-control .rating label {
+        font-size: 24px;
+        color: #ccc;
+        cursor: pointer;
+    }
+    /* Unicode character for a star icon before rating labels */
+    .input-control .rating label:before {
+        content: '\2605';
+    }
+    /*(right-to-left) direction for the rating element */
+    .input-control .rating {
+        direction: rtl;
+    }
+    
+/* Styles for hover effect on rating labels */
+    .input-control .rating label:hover,
+    .input-control .rating label:hover ~ label {
+        color: #ffcc00;
+    }
+
+    .input-control .rating input[type="radio"]:checked ~ label {
+        color: #ffcc00;
+    }
+
+.input-control input:focus {
+    outline: 0;
+}
+/* Styles for input controls with success validation */
+.input-control.success input {
+    border-color: #09c372;
+}
+/* Styles for input controls with error validation */
+.input-control.error input {
+    border-color: #ff3860;
+}
+/* Styles for error messages in input controls */
+.input-control .error {
+    color: #ff3860;
+    font-size: 9px;
+    height: 13px;
+}
+/* Styles for the popup element */
+#popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 4px;
+    display: none;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}

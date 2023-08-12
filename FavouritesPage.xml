@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Root -->
+<movieList>
+	<!-- Store about movie -->
+	<movie>
+		<!-- Store movie details -->
+		<name>Diary of a wimpy kid dog days</name>
+		<year>2012</year>
+		<imdb>6.3</imdb>
+		<rottenTomatoes>52&#37;</rottenTomatoes>
+		<image>FavouritesImages/Diary of a wimpy kid dog days.jpg</image>
+	</movie>
+	<movie>
+		<name>Shotgun wedding</name>
+		<year>2022</year>
+		<imdb>5.5</imdb>
+		<rottenTomatoes>45&#37;</rottenTomatoes>
+		<image>FavouritesImages/Shotgun wedding.jpg</image>
+	</movie>
+	<movie>
+		<name>Finding ohana</name>
+		<year>2021</year>
+		<imdb>6.1</imdb>
+		<rottenTomatoes>82&#37;</rottenTomatoes>
+		<image>FavouritesImages/Finding Ohana.jpg</image>
+	</movie>
+	<movie>
+		<name>Jhon wick 3</name>
+		<year>2019</year>
+		<imdb>7.4</imdb>
+		<rottenTomatoes>89&#37;</rottenTomatoes>
+		<image>FavouritesImages/Jhon wick 3.jpg</image>
+	</movie>
+	<movie>
+		<name>Doctor strange 2</name>
+		<year>2022</year>
+		<imdb>6.9</imdb>
+		<rottenTomatoes>74&#37;</rottenTomatoes>
+		<image>FavouritesImages/Doctor strange 2.jpg.webp</image>
+	</movie>
+	<movie>
+		<name>Flying colors</name>
+		<year>2015</year>
+		<imdb>7.3</imdb>
+		<rottenTomatoes>79&#37;</rottenTomatoes>
+		<image>FavouritesImages/Flying colors.jpg</image>
+	</movie>
+	<movie>
+		<name>Interstellar</name>
+		<year>2014</year>
+		<imdb>8.7</imdb>
+		<rottenTomatoes>73&#37;</rottenTomatoes>
+		<image>FavouritesImages/Interstellar.jpg</image>
+	</movie>
+	<movie>
+		<name>Hercules</name>
+		<year>2014</year>
+		<imdb>6</imdb>
+		<rottenTomatoes>58&#37;</rottenTomatoes>
+		<image>FavouritesImages/Hercules.jpg</image>
+	</movie>
+	<movie>
+		<name>The lion king</name>
+		<year>1994</year>
+		<imdb>8.5</imdb>
+		<rottenTomatoes>93&#37;</rottenTomatoes>
+		<image>FavouritesImages/The lion king.jpeg</image>
+	</movie>
+	<movie>
+		<name>A space odyssey</name>
+		<year>1994</year>
+		<imdb>8.5</imdb>
+		<rottenTomatoes>93&#37;</rottenTomatoes>
+		<image>FavouritesImages/A space odyssey.jpg</image>
+	</movie>
+	<movie>
+		<name>Fantasy island</name>
+		<year>2020</year>
+		<imdb>4.9</imdb>
+		<rottenTomatoes>8&#37;</rottenTomatoes>
+		<image>FavouritesImages/Fantasy island.jpg</image>
+	</movie>
+	<movie>
+		<name>Oppenheimer</name>
+		<year>2023</year>
+		<imdb>8.9</imdb>
+		<rottenTomatoes>93&#37;</rottenTomatoes>
+		<image>FavouritesImages/Oppenheimer.jpeg</image>
+	</movie>
+	<movie>
+		<name>The little mermaid</name>
+		<year>2023</year>
+		<imdb>7.2</imdb>
+		<rottenTomatoes>67&#37;</rottenTomatoes>
+		<image>FavouritesImages/The little mermaid.jpeg</image>
+	</movie>
+	<movie>
+		<name>The flash</name>
+		<year>2023</year>
+		<imdb>7</imdb>
+		<rottenTomatoes>63&#37;</rottenTomatoes>
+		<image>FavouritesImages/The flash.jpeg</image>
+	</movie>
+	<movie>
+		<name>Jhon wick 4</name>
+		<year>2023</year>
+		<imdb>7.8</imdb>
+		<rottenTomatoes>94&#37;</rottenTomatoes>
+		<image>FavouritesImages/Jhon wick 4.jpg</image>
+	</movie>
+	<movie>
+		<name>Inception</name>
+		<year>2010</year>
+		<imdb>8.8</imdb>
+		<rottenTomatoes>87&#37;</rottenTomatoes>
+		<image>FavouritesImages/Inception.jpg</image>
+	</movie>
+	<movie>
+		<name>Pirates of the caribbean 5.jpeg</name>
+		<year>2017</year>
+		<imdb>6.5</imdb>
+		<rottenTomatoes>30&#37;</rottenTomatoes>
+		<image>FavouritesImages/Pirates of the caribbean 5.jpeg</image>
+	</movie>
+	<movie>
+		<name>Avatar 1</name>
+		<year>2009</year>
+		<imdb>7.9</imdb>
+		<rottenTomatoes>82&#37;</rottenTomatoes>
+		<image>FavouritesImages/Avatar 1.jpg</image>
+	</movie>
+	<movie>
+		<name>Avatar 2</name>
+		<year>2023</year>
+		<imdb>7.6</imdb>
+		<rottenTomatoes>76&#37;</rottenTomatoes>
+		<image>FavouritesImages/Avatar 2.jpg</image>
+	</movie>
+</movieList>

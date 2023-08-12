@@ -1,0 +1,146 @@
+*{
+   margin:0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Poppins',sans-serif; 
+}
+:root{
+    --main-color: #b60000 ;
+    --text-color: #000000; 
+    --bg-color:#fff ;
+}
+.darktheme{
+    --bg-color: #000000;
+    --text-color: #fff;
+    --main-color: #b60000;
+}
+.hero{
+    height: 14vh;
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: radial-gradient(var(--main-color),var(--bg-color))
+}
+
+.editorscard{
+    position: relative;
+    width: 350px;
+    height: 190px;
+    background: #FFF;
+    border-radius: 20px;
+    box-shadow: 0 35px 80px rgba(0,0,0,0.15);
+    transition: 0.5s;
+}
+.editorscard:hover{
+    height: 450px;
+}
+.editorsimgBx{
+    position: absolute;
+    left: 25%;
+    top: -50px;
+    width: 150px;
+    height: 150px;
+    background: rgb(255, 235, 235);
+    border-radius: 20px;
+    box-shadow: 0 15px 50px rgba(0,0,0,0.35);
+    overflow: hidden;
+    transition: 0.5s;
+}
+.editorscard:hover .editorsimgBx{
+    width: 200px;
+    height: 200px;
+}
+#number {
+    visibility: hidden;
+}
+.editorscard:hover #number{
+    visibility: visible;
+}
+.editorsimgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.editorscard .editorscontent{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+}
+.editorscard .editorscontent .editorsdetails{
+    padding: 40px;
+    text-align: center;
+    width: 100%;
+    transition: 0.5s;
+    transform: translateY(100px);
+}
+.editorscard:hover .editorscontent .editorsdetails{
+    transform: translateY(0px);
+}
+.editorscard .editorscontent .editorsdetails h2{
+    font-size: 1.25em;
+    font-weight: 600;
+    color: #555;
+    line-height: 1.2em;
+}
+.editorscard .editorscontent .editorsdetails h2 span{
+    font-size: 0.75em;
+    font-weight: 500;
+    opacity: 0.5;
+}
+.editorscard .editorscontent .editorsdetails .data{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+.editorscard .editorscontent .editorsdetails .data h3{
+    font-size: 1em;
+    color: #555;
+    line-height: 1.2em;
+    font-weight: 600;
+}
+.editorscard .editorscontent .editorsdetails .data h3 span{
+    font-size: 0.85;
+    font-weight: 400;
+    opacity: 0.5;
+}
+
+.editorscard .editorscontent .editorsdetails .contactBtn{
+    display: flex;
+    justify-content: center;
+}
+
+.editorscard .editorscontent .editorsdetails .contactBtn button{
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: none;
+    outline:none;
+    font-size: 1em;
+    font-weight: 500;
+    background: #b60000;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 10px;
+
+}
+.contactBtn a {
+    color: white;
+    text-decoration: none; 
+}
+
+.editorscard .editorscontent .editorsdetails .contactBtn button:nth-child(2){
+    border: 1px solid #999;
+    color: #999;
+    background: #fff;
+}

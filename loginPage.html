@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign-up</title>
+        <link rel="stylesheet" href="Index.css">
+        <link rel="stylesheet" href="loginpg.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+         <!-- Setting the logo as favicon -->
+        <link rel="icon" type="image/x-icon" href="Logo/LogoFavicon.ico">
+    </head>
+    <body>
+        <header>
+            <div class="hero">
+                <!--Navigation bar-->
+                <nav>
+                    <a href="Index.html"><img class="logo" src="logo/logo2.png" alt="Image"></a>
+                    <ul>
+                        <li><a href="Index.html"><i class="uil uil-home"></i>&nbsp;Home</a></li>
+                        <li><a href="gallery.html"><i class="uil uil-clapper-board"></i>&nbsp;Gallery</a></li>
+                        <li><a href="about.html"><i class="uil uil-user-circle"></i>&nbsp;About Us</a></li>
+                        <li><a href="shop.html"><i class="uil uil-shopping-bag"></i>&nbsp;Shop</a></li>
+                        <li><a href="quiz.html"><i class="uil uil-folder-question"></i>&nbsp;Quiz</a></li>
+                        <li><a href="commentSourceCode.html"><i class="uil uil-comment-alt-lines"></i>&nbsp;Comments</a></li>
+                    </ul>
+                    <div class="btn">
+                        <div class="button-container">
+                            <a href="loginPage.html" class="action_btn">Sign up</a>
+                            <div class="toggle_btn">
+                                &nbsp;&nbsp;<i class="uil-solid uil-bars"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown_menu">
+                        <li><a href="Index.html"><i class="uil uil-home"></i>&nbsp;Home</a></li>
+                        <li><a href="gallery.html"><i class="uil uil-clapper-board"></i>&nbsp;Gallery</a></li>
+                        <li><a href="about.html"><i class="uil uil-user-circle"></i>&nbsp;About Us</a></li>
+                        <li><a href="shop.html"><i class="uil uil-shopping-bag"></i>&nbsp;Shop</a></li>
+                        <li><a href="quiz.html"><i class="uil uil-folder-question"></i>&nbsp;Quiz</a></li>
+                        <li><a href="commentSourceCode.html"><i class="uil uil-comment-alt-lines"></i>&nbsp;Comments</a></li>
+                        <li><a href="loginPage.html" class="action_btn">Sign up</a></li>
+                    </div>
+                    <i class='bx bx-sun' id="dark"></i>
+                </nav>
+            </div>
+        </header>
+        <!--SignUp form-->
+        <div class="Forms">
+            <!--First step of the form-->
+            <form id="PersonalDetails">
+                <h3 class="steps">ENTER PERSONAL DETAILS</h3>
+
+                <div id="personal-container">
+
+                    <div class="input1">
+                        <label id ="hiddenLabel" for="user_name">User Name</label>
+                        <input type="text" name="userName" id="user_name" placeholder="Username">
+                        <div class="error"></div> <!--Display error message when user enters invalid data-->
+                    </div>
+
+                    <div class="input1">
+                        <label id ="hiddenLabel" for="user_age">Age</label>
+                        <input type="number" name="userAge" id="user_age" placeholder="Age">
+                        <div class="error"></div> <!--Display error message when user enters invalid data-->
+                    </div>
+
+                    <div class="input1">
+                        <label id ="hiddenLabel" for="gender">Gender</label>
+                        <select id="gender">
+                            <option value="gender">Select gender</option>
+                            <option value="male"> Male </option>
+                            <option value="female"> Female </option>
+                        </select>
+                        <br>
+                        <div class="error"></div> <!--Display error message when user enters invalid data-->
+                    </div>
+
+                    <br>
+                    <div class="input1">
+                        <label id ="hiddenLabel" for="user_email">Email</label>
+                        <input type="email" name="email" id="user_email" placeholder="Email">
+                        <div class="error"></div> <!--Display error message when user enters invalid data-->
+                    </div>
+
+                    <div class="input1">
+                        <label id ="hiddenLabel" for="password">Password</label>
+                        <input type="password" id="password" placeholder="Password">
+                        <i class="fas fa-eye-slash password-icon" id="eye-icon"></i>
+                        <div class="error"></div>  <!--Display error message when user enters invalid data-->         
+                    </div>
+
+                </div>
+
+                <!--Button to navigate to the next step of the form-->
+                <div id="buttonsPageOne">
+                    <button id="Next1" type="button">Next</button>
+                </div>
+
+            </form>
+
+            <!--Second step of the form-->
+            <form id="UserPreference1">
+                <h3 class="steps"> CHOOSE ANY GENRE </h3>
+                <br><br>
+                <p id="error_genre"></p> <!--Display error message when user enters invalid data-->
+                <div class="checkbox-container"></div> 
+
+                <!--Button to navigate between the first and the second step of the form-->
+                <div id="buttonsPageTwo">
+                    <button id="Back1" type="button">Back</button>
+                    <button id="Next2" type="button">Next</button>
+                </div>  
+
+            </form>
+
+            <!--Third step of the form-->
+            <form id="UserPreference2">
+                <div id="userPrefer2">
+
+                    <div class="input3">
+                        <label for="occassion"> CHOOSE THE OCCASSION </label>
+                        <select id="occassion">
+                            <option value="Occassion"> Select </option>
+                            <option> Movie by myself </option>
+                            <option> Movie with friends </option>
+                            <option> Date night </option>
+                            <option> Family gathering </option>
+                            <option> Girls' night out </option>
+                            <option> Boys' night out </option>
+                            <option> Halloween </option>
+                        </select>
+    
+                        <div class="error"></div> <!--Display error message when user enters invalid data-->
+                    </div>
+
+                    <div class="input3">
+                        <label for="language"> PREFERRED LANGUAGE </label>
+                        <select id="language">
+                            <option value="Language"> Select </option>
+                            <option> English </option>
+                            <option> French </option>
+                            <option> German </option>
+                            <option> Spanish </option>
+                            <option> Hindi </option>
+                            <option> Sinhala </option>
+                        </select>
+
+                        <div class="error"></div> <!--Display error message when user enters invalid data-->
+                    </div>
+
+                    <div class="input3">
+                        <label for="noOfMovies"> NUMBER OF MOVIES </label>
+                        <select id="noOfMovies">
+                            <option value="moviesCount"> Select </option>
+                            <option> 1 </option>
+                            <option> 2 </option>
+                            <option> 3 </option>
+                            <option> 4 </option>
+                            <option> 5 </option>
+                            <option> more than 5 </option>
+                        </select>
+                        
+                        <div class="error"></div> <!--Display error message when user enters invalid data-->
+                    </div>
+
+                </div>
+                
+                <!--Button to navigate between the first and the second step of the form-->
+                <div id="buttonsPageThree">
+                    <button id="Back2" type="button">Back</button>
+                    <button id="Finish" type="button">Finish</button>
+                </div>
+                
+            </form>
+
+            <!--Animation added to the Sign-up form-->
+            <div id="step-row">
+                <div id="progress"></div>
+                <div class="step-col">Step 1</div>
+                <div class="step-col">Step 2</div>
+                <div class="step-col">Step 3</div>
+            </div>
+
+        </div>
+
+        <!--Footer of the page-->
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col">
+                        <ul>
+                            <li><a href="#"><img src="logo/logo.png" id="footer-logo" alt="logo"></a></li>
+                            <p>5th Avenue st, manhattan<br>
+                                New York, NY 10001 <br>
+                                Call us:+94 77 575 9771 
+                            </p><br>
+
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-col">
+                        <h4>Legal</h4>
+                        <ul>
+                            <li><a href="#">Terms of Use</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Security</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>Account</h4>
+                        <ul>
+                            <li><a href="#">My Account</a></li>
+                            <li><a href="#">Watchlist</a></li>
+                            <li><a href="#">Collections</a></li>
+                            <li><a href="#">User Guide</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>Newsletter</h4>
+                        <ul>
+                            <li><a href="NewsLetter.html" target="_blank">Subscribe now &nbsp;<i class="uil-solid uil-envelope"></i></a></li>
+                        </ul>
+                    </div>
+
+
+                    <!--Editor's page-->
+                    <div class="footer-col">
+                        <h4>Creator</h4>
+                        <ul>
+                            <li><a href="Minuri.html" target="_blank">Editors Page &nbsp;</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>Follow us</h4>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/login/" aria-label="Facebook"><i class="uil-solid uil-facebook-f"> </i></a>
+                            <a href="https://twitter.com/i/flow/login?lang=en" aria-label="Twitter"><i class="uil-solid uil-twitter"> </i></a>
+                            <a href="https://www.instagram.com/accounts/login/" aria-label="Instagram"><i class="uil-solid uil-instagram"> </i></a>
+                            <a href="https://www.linkedin.com/feed/" aria-label="LinkedIn"><i class="uil-solid uil-linkedin"> </i></a>
+                         </div>
+                         
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+        <script defer src="loginpg.js"></script>
+        <script defer src="Index.js"></script>
+    </body>
+</html>

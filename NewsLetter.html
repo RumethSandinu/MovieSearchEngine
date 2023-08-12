@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!-- Page langiage as Enligh-US -->
+<html lang = "en-US">
+<head>
+    <!-- Page encoding -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>News Letter</title>
+    <link rel="stylesheet" href="NewsLetter.css">
+    <!-- Setting the logo as favicon -->
+    <link rel="icon" type="image/x-icon" href="Logo/LogoFavicon.ico">
+</head>
+<body>
+    <div class="FormContainer">
+        <div class="FormHeadingDiv">
+        <!-- heading for the form -->
+        <h2 class="FormHeading">Subscribe For The News Letter</h2> 
+        </div>
+        <br>
+        <div class="InputContainer">
+            <!--Input text field to input first name -->
+            <label for="FirstName">First Name</label>
+            <input class="InputField" type="text" id="FirstName" name="FirstNameInput" placeholder="First Name" oninput="validateFirstName(this.value)">
+            <div class="ValidationIcon ValidationIcon--correct"></div>
+            <div class="ValidationIcon ValidationIcon--incorrect"></div>
+        </div>
+        <div class="InputContainer">
+            <!--Input text fieldto input last name -->
+            <label for="LastName">Last Name</label>
+            <input class="InputField" type="text" id="LastName" name="LastNameInput" placeholder="Last Name" oninput="validateLastName(this.value)">
+            <div class="ValidationIcon ValidationIcon--correct-lastname"></div>
+            <div class="ValidationIcon ValidationIcon--incorrect-lastname"></div>
+        </div>
+        <div class="InputContainer">
+            <!--Input text field to input email address -->
+            <label for="Email">Email</label>
+            <input class="InputField" type="text" id="Email" name="EmailInput" placeholder="Email Address" oninput="validateEmail(this.value)">
+            <div class="ValidationIcon ValidationIcon--correct-email"></div>
+            <div class="ValidationIcon ValidationIcon--incorrect-email"></div>
+        </div>
+        <br>
+        <!-- Subscribe button -->
+        <button id="subscribeButton" class="SubscribeButton" onclick="subscribeClicked()">Subscribe</button>
+    </div>
+    <a href="Rumeth.html" id="editorsPage" target="_blank">Editor's Page</a>
+    <!-- Linking external javascript files -->
+    <script src="NewsLetter.js"></script>
+</body>
+</html>

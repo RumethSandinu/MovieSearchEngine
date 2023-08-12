@@ -1,0 +1,142 @@
+body{
+    width: 100%;
+    height: 100%; 
+    /* Background gif */
+    background-image: url('NewsLetterImages/SmokeVideo.gif.webp');
+    /* Loop the gif */
+    background-repeat: repeat;
+    /* Cover the full page with gif */
+    background-size: cover; 
+  }
+
+/* Hide label,header,nav,aside and footer */
+label{
+    display: none;
+}
+header{
+    display: none;
+}
+nav{
+    display: none;
+}
+aside{
+    display: none;
+}
+footer{
+    display: none;
+}
+.FormContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* Center the form container */
+    transform: translate(-50%, -50%);
+    height: 360px;
+    width: 570px;
+    border-style: solid;
+    border-color: #fff;
+    border-width: 0.5px;
+}
+
+.InputContainer {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.InputField {
+    height: 40px;
+    width: 400px;
+    font-size: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 60px;
+    margin-right: 40px;
+    border-color: black;
+    border-width: 1px;
+    background-color: #ffffff99;
+}
+.InputField::placeholder{
+    color: #000;
+}
+
+.InputField:focus {
+    outline: none;
+    outline: 3px solid #0e881e;
+    background-color: #ffffffb9;
+}
+.InputField:hover {
+    background-color: #ffffffb9;
+}
+.FormHeading {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #ffffffb9;
+}
+.FormHeadingDiv{
+    background-color:#21303e ;
+}
+
+.SubscribeButton{
+    position: absolute;
+    left: 50%;
+    /* Positioning the button */
+    transform: translate(-50%, -10%);
+    font-size: 26px;
+    color: #ffffffc0;
+    background-color: #c02416;
+    height: 40px;
+    border: none;
+}
+
+.SubscribeButton:hover{
+    background-color:#e4392a;
+}
+
+.ValidationIcon {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    /* Center the icons vertially */
+    transform: translateY(-50%);
+    /* Hidding the icon */
+    display: none;
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+}
+
+.ValidationIcon--correct {
+    background-image: url('NewsLetterImages/correctInput.png');
+}
+
+.ValidationIcon--incorrect {
+    background-image: url('NewsLetterImages/wrongInput.png');
+}
+
+.ValidationIcon--correct-lastname {
+    background-image: url('NewsLetterImages/correctInput.png');
+}
+
+.ValidationIcon--incorrect-lastname {
+    background-image: url('NewsLetterImages/wrongInput.png');
+}
+
+.ValidationIcon--correct-email {
+    background-image: url('NewsLetterImages/correctInput.png');
+}
+
+.ValidationIcon--incorrect-email {
+    background-image: url('NewsLetterImages/wrongInput.png');
+}
+/* Display the editors page */
+#editorsPage {
+    position: absolute;
+    top: 95%;
+    left: 1%;
+    font-size: 18px;
+    text-decoration: none;
+    color: #ffffffc0;
+    z-index: 3; 
+  }

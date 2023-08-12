@@ -1,0 +1,176 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="Index.css">
+    <link rel="stylesheet" href="comments.css">
+    <!-- Display favicon -->
+    <link rel="icon" type="image/x-icon" href="logo/LogoFavicon.ico">
+    
+</head>
+<body>
+    <header>
+        <div class="hero">
+            <nav>
+                <a href="Index.html"><img class="logo" src="logo/logo2.png" alt="Image"></a>
+                <!-- Navigation links -->
+                <ul>
+                    <li><a href="Index.html"><i class="uil uil-home"></i>&nbsp;Home</a></li>
+                    <li><a href="gallery.html"><i class="uil uil-clapper-board"></i>&nbsp;Gallery</a></li>
+                    <li><a href="FavouritesPage.html"><i class="uil uil-favorite"></i>&nbsp;Favourites</a></li>
+                    <li><a href="about.html"><i class="uil uil-user-circle"></i>&nbsp;About Us</a></li>
+                    <li><a href="shop.html"><i class="uil uil-shopping-bag"></i>&nbsp;Shop</a></li>
+                    <li><a href="quiz.html"><i class="uil uil-folder-question"></i>&nbsp;Quiz</a></li>
+                    <li><a href="commentSourceCode.html"><i class="uil uil-comment-alt-lines"></i>&nbsp;Feedbacks</a></li>
+                </ul>
+                <!-- Buttons container -->
+                <div class="btn">
+                     <!-- Action button and toggle button -->
+                    <div class="button-container">
+                        <a href="loginPage.html" class="action_btn">Sign up</a>
+                        <div class="toggle_btn">
+                            &nbsp;&nbsp;<i class="uil-solid uil-bars"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Dropdown menu -->
+                <div class="dropdown_menu">
+                    <li><a href="Index.html"><i class="uil uil-home"></i>&nbsp;Home</a></li>
+                    <li><a href="gallery.html"><i class="uil uil-clapper-board"></i>&nbsp;Gallery</a></li>
+                    <li><a href="FavouritesPage.html"><i class="uil uil-favorite"></i>&nbsp;Favourites</a></li>
+                    <li><a href="about.html"><i class="uil uil-user-circle"></i>&nbsp;About Us</a></li>
+                    <li><a href="shop.html"><i class="uil uil-shopping-bag"></i>&nbsp;Shop</a></li>
+                    <li><a href="quiz.html"><i class="uil uil-folder-question"></i>&nbsp;Quiz</a></li>
+                    <li><a href="commentSourceCode.html"><i class="uil uil-comment-alt-lines"></i>&nbsp;Feedbacks</a></li>
+                    <li><a href="loginPage.html" class="action_btn">Sign up</a></li>
+                </div>
+                 <!-- Dark mode toggle icon -->
+                <i class='bx bx-sun' id="dark"></i>
+    
+            </nav>
+        </div>
+    </header>
+    <!-- Section containing the feedback form -->
+    <section>
+        <div class="container">
+            <form id="form">
+                <!-- Feedback form -->
+                <h2>Drop Your Feedback here.</h2>
+                <div class="input-control">
+                    <label for="username">Username</label>
+                    <input id="username" name="username" type="text">
+                    <div class="error"></div>
+                </div>
+                <div class="input-control">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="text">
+                    <div class="error"></div>
+                </div>
+    
+                <div class="input-control">
+                    <label for="rating">Rating</label>
+                     <!-- Rating fieldset with radio buttons -->
+                <fieldset class="rating" id="rating">
+                    <input type="radio" id="star1" name="rating" value="excellent" /><label for="star1" title="excellent"></label>
+                    <input type="radio" id="star2" name="rating" value="good" /><label for="star2" title="good"></label>
+                    <input type="radio" id="star3" name="rating" value="average" /><label for="star3" title="average"></label>
+                    <input type="radio" id="star4" name="rating" value="poor" /><label for="star4" title="poor"></label>
+                    <input type="radio" id="star5" name="rating" value="terrible" /><label for="star5" title="terrible"></label>
+                </fieldset>
+                    <div class="error"></div>
+                </div>
+                <div class="input-control">
+                    <label for="comment">Comment</label>
+                    <textarea id="comment" name="comment" rows="4" cols="50"></textarea>
+                    <div class="error"></div>
+                </div>
+                
+                 <!-- Submit and reset buttons -->
+                <button type="submit">Submit</button>
+                <button type="button" onclick="document.getElementById('form').reset()">Reset</button>
+    
+            </form>
+        </div>
+    </section>
+
+    <!-- Hidden popup section that will display when feedback is submitted -->
+    <div id="popup" style="display: none;">
+        <h2>Dear <span id="popupUsername"></span> , </h2>
+        <!-- Paragraph in the popup thanking the user for feedback -->
+        <p>Thank you very much for <br>
+            your feedback. You have rated our site as <span id="popupRating"></span>, and your comment was, <span id="popupComment"></span></p>
+    </div>
+    <!-- Footer section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <ul>
+                        <li><a href="#"><img id="footer-logo" src="logo/logo.png" alt="Image">
+                            </a></li>
+                        <p>5th Avenue st, manhattan<br>
+                        New York, NY 10001 <br>
+                        Call us:+94 77 575 9771</p><br>
+
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Terms of Use</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Security</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Account</h4>
+                    <ul>
+                        <li><a href="#">My Account</a></li>
+                        <li><a href="#">Watchlist</a></li>
+                        <li><a href="#">Collections</a></li>
+                        <li><a href="#">User Guide</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Newsletter</h4>
+                    <ul>
+                        <li><a href="NewsLetter.html" target="_blank">Subscribe now &nbsp;<i class="uil-solid uil-envelope"></i></a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Creator</h4>
+                    <ul>
+                        <li><a href="Vihindi.html" target="_blank">Editors Page &nbsp;</a></li>
+                    </ul>
+                </div>
+                 <div class="footer-col">
+                            <h4>Follow us</h4>
+                            <div class="social-links">
+                                <a href="https://www.facebook.com/login/" aria-label="Facebook"><i class="uil-solid uil-facebook-f"> </i></a>
+                                <a href="https://twitter.com/i/flow/login?lang=en" aria-label="Twitter"><i class="uil-solid uil-twitter"> </i></a>
+                                <a href="https://www.instagram.com/accounts/login/" aria-label="Instagram"><i class="uil-solid uil-instagram"> </i></a>
+                                <a href="https://www.linkedin.com/feed/" aria-label="LinkedIn"><i class="uil-solid uil-linkedin"> </i></a>
+                             </div>
+                             
+                        </div>
+
+            </div>
+
+        </div>
+    </footer>
+      <!-- JavaScript file -->   
+    <script src="comments.js" defer></script>
+    <script src="Index.js" defer></script>
+    
+</body>
+
+</html>    
+
